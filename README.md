@@ -47,8 +47,11 @@ Overall, this experiment supports the following points:
 I generated a 5×5 accuracy matrix where:
 - Rows represent the **models (M1–M5)**
 - Columns represent the **sampling techniques (Sampling1–Sampling5)**
-Accuracy table: [accuracy_table.csv](accuracy_table.csv)
-Best summary: [best_summary.csv](best_summary.csv)
+Accuracy table: ![Result](table.png)
+Best summary: ![Sampling](sampling.png)<img width="1580" height="478" alt="sampling" src="https://github.com/user-attachments/assets/99a0b30b-3f2d-4997-99e8-1ff6acf49ae8" />
+<img width="1580" height="777" alt="graph" src="https://github.com/user-attachments/assets/dbcebca3-5088-41d1-b553-f3c4c63df16f" />
+<img width="1980" height="678" alt="table" src="https://github.com/user-attachments/assets/11e0bae2-92ce-4f3e-88ba-b498821f405d" />
+
 
 
 ### Result Graph
