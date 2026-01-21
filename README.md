@@ -10,12 +10,6 @@ Initially, the dataset contained far more legitimate transactions than fraudulen
 To keep the comparison fair, I used a **single common holdout test set** for evaluation. This ensured that every sampling–model combination was tested on the same data, so differences in accuracy were due to the sampling method and model behavior rather than different test splits.
 From the results, it was clear that the choice of sampling method can noticeably affect performance. Some models performed consistently well across multiple sampling techniques, while others were sensitive to how the training sample was created. In general, ensemble-based models such as Random Forest / Gradient Boosting handled the sampled datasets more robustly because they can capture non-linear relationships and reduce overfitting using multiple trees. On the other hand, distance-based and margin-based models (like KNN and SVM) were more dependent on how representative the sample was, and their accuracy changed more across sampling methods.
 
-Overall, this experiment supports the following points:
-- Imbalanced datasets can reduce prediction quality and can bias models toward the majority class.
-- Balancing the dataset before training improves learning of fraud-related patterns.
-- Different sampling strategies create different training distributions, which directly impacts accuracy.
-- The best sampling technique is not always the same for every model; model behavior matters.
-- Using a common test set makes the comparison between methods reliable and fair.
 
 
 ## Methodology
@@ -42,19 +36,13 @@ Overall, this experiment supports the following points:
 
 
 ## Results
-
-### Accuracy Table
-I generated a 5×5 accuracy matrix where:
-- Rows represent the **models (M1–M5)**
-- Columns represent the **sampling techniques (Sampling1–Sampling5)**
-Accuracy table: ![Result](table.png)
-Best summary: ![Sampling](sampling.png)<img width="1580" height="478" alt="sampling" src="https://github.com/user-attachments/assets/99a0b30b-3f2d-4997-99e8-1ff6acf49ae8" />
-<img width="1580" height="777" alt="graph" src="https://github.com/user-attachments/assets/dbcebca3-5088-41d1-b553-f3c4c63df16f" />
+  
+<img width="1580" height="478" alt="sampling" src="https://github.com/user-attachments/assets/99a0b30b-3f2d-4997-99e8-1ff6acf49ae8" />
 <img width="1980" height="678" alt="table" src="https://github.com/user-attachments/assets/11e0bae2-92ce-4f3e-88ba-b498821f405d" />
 
 
 
-### Result Graph
+## Result Graph
 To visualize performance differences, I used a graph to compare accuracy across sampling methods and models :
-[Result Graph](results_graph.png)
 
+<img width="1580" height="777" alt="graph" src="https://github.com/user-attachments/assets/dbcebca3-5088-41d1-b553-f3c4c63df16f" />
