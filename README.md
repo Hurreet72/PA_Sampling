@@ -51,7 +51,7 @@ Accuracy table: [accuracy_table.csv](accuracy_table.csv)
 Best summary: [best_summary.csv](best_summary.csv)
 
 
-## Result Graph
+### Result Graph
 To visualize performance differences, I used a graph to compare accuracy across sampling methods and models :
-![Result Graph](results_graph.png)
+[Result Graph](results_graph.png)
 
